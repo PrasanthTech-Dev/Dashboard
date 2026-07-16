@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import { Settings as SettingsIcon, ChevronLeft, ChevronRight } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const DashboardLayout = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);

@@ -13,7 +13,7 @@ import {
   MapPin,
   MoreHorizontal
 } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const MyProfile = () => {
   // Feed list state

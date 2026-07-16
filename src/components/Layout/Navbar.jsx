@@ -14,7 +14,7 @@ import {
   LogOut 
 } from 'lucide-react';
 import useAuth from '../hooks/useAuth';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const Navbar = ({ onToggleSidebar, onToggleSettings }) => {
   const { user, logout } = useAuth();

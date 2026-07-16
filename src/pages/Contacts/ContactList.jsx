@@ -9,7 +9,7 @@ import {
   Trash2
 } from 'lucide-react';
 
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const ContactList = () => {
   const navigate = useNavigate();

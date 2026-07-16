@@ -5,7 +5,7 @@ import lockIcon from '../../assets/images/auth/Lock.png';
 
 const ResetPassword = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ email: 'prasanth@gmail.com', password: '', confirmPassword: '' });
+  const [formData, setFormData] = useState({ email: '', password: '', confirmPassword: '' });
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
 
@@ -45,7 +45,7 @@ const ResetPassword = () => {
                 value={formData.email} 
                 onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                 required
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
             </div>
 
@@ -57,7 +57,7 @@ const ResetPassword = () => {
                   value={formData.password} 
                   onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
                   required
-                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ const ResetPassword = () => {
                 value={formData.confirmPassword} 
                 onChange={(e) => setFormData(prev => ({ ...prev, confirmPassword: e.target.value }))}
                 required
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
               {error && <span style={{ color: '#ef4444', fontSize: '11px', marginTop: '4px', display: 'block' }}>{error}</span>}
             </div>

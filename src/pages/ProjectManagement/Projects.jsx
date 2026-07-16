@@ -17,7 +17,7 @@ import {
   Calendar as CalendarIcon,
   ChevronRight
 } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('All');

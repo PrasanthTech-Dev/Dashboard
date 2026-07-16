@@ -5,7 +5,7 @@ import { Eye, EyeOff } from 'lucide-react';
 
 const Register = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ name: 'Prasanth', email: 'prasanth@gmail.com', password: 'password123', confirmPassword: 'password123' });
+  const [formData, setFormData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState({});
 
@@ -82,7 +82,7 @@ const Register = () => {
                 onChange={handleInputChange}
                 required
                 placeholder="Prasanth"
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
               {errors.name && <span style={{ color: '#ef4444', fontSize: '11px', marginTop: '4px', display: 'block' }}>{errors.name}</span>}
             </div>
@@ -95,8 +95,8 @@ const Register = () => {
                 value={formData.email} 
                 onChange={handleInputChange}
                 required
-                placeholder="prasanth@gmail.com"
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                placeholder="prasanth@examplegmail.com"
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
               {errors.email && <span style={{ color: '#ef4444', fontSize: '11px', marginTop: '4px', display: 'block' }}>{errors.email}</span>}
             </div>
@@ -110,7 +110,7 @@ const Register = () => {
                   value={formData.password} 
                   onChange={handleInputChange}
                   required
-                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
                 />
                 <button 
                   type="button" 
@@ -131,7 +131,7 @@ const Register = () => {
                 value={formData.confirmPassword} 
                 onChange={handleInputChange}
                 required
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
               {errors.confirmPassword && <span style={{ color: '#ef4444', fontSize: '11px', marginTop: '4px', display: 'block' }}>{errors.confirmPassword}</span>}
             </div>

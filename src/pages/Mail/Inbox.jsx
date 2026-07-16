@@ -18,7 +18,7 @@ import {
   Mail,
   X
 } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const Inbox = () => {
   // Folder & label states

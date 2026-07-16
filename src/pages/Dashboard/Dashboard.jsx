@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, ChevronDown, ArrowUp, ArrowDown, BarChart2, Users, MoreHorizontal } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const Dashboard = () => {
   // Automated state for metrics

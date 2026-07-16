@@ -5,7 +5,7 @@ import lockIcon from '../../assets/images/auth/Lock.png';
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('prasanth@gmail.com');
+  const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,8 +39,8 @@ const ForgotPassword = () => {
                 value={email} 
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                placeholder="prasanth@gmail.com"
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                placeholder="prasanth@examplegmail.com"
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
             </div>
 

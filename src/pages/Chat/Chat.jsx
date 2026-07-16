@@ -12,7 +12,7 @@ import {
   Trash2,
   X
 } from 'lucide-react';
-import defaultAvatar from '../../assets/images/profile/#2.png';
+import defaultAvatar from '../../assets/images/profile/avatar.png';
 
 const Chat = () => {
   const [messages, setMessages] = useState([

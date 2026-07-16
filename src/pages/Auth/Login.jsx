@@ -8,7 +8,7 @@ const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
   
-  const [formData, setFormData] = useState({ email: 'prasanth@gmail.com', password: 'password123' });
+  const [formData, setFormData] = useState({ email: '', password: '' });
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState({});
 
@@ -81,8 +81,8 @@ const Login = () => {
                 value={formData.email} 
                 onChange={handleInputChange}
                 required
-                placeholder="prasanth@gmail.com"
-                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                placeholder="prasanth@examplegmail.com"
+                style={{ width: '100%', padding: '10px 14px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
               />
               {errors.email && <span style={{ color: '#ef4444', fontSize: '11px', marginTop: '4px', display: 'block' }}>{errors.email}</span>}
             </div>
@@ -96,7 +96,7 @@ const Login = () => {
                   value={formData.password} 
                   onChange={handleInputChange}
                   required
-                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none' }}
+                  style={{ width: '100%', padding: '10px 14px', paddingRight: '40px', borderRadius: '6px', border: '1px solid #cbd5e1', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}
                 />
                 <button 
                   type="button" 
